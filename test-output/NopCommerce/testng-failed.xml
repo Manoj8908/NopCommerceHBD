@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NopCommerce]">
+  <listeners>
+    <listener class-name="Com.nopCommerce.util.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="NOP-E-Commerce Test(failed)">
+    <classes>
+      <class name="Com.nopCommerce.Tests.NopCommerce_Register_Tc001">
+        <methods>
+          <include name="RegisterNopCommerce"/>
+          <include name="Teardown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- Com.nopCommerce.Tests.NopCommerce_Register_Tc001 -->
+      <class name="Com.nopCommerce.Tests.NopCommerce_RegisterDDT_Tc002">
+        <methods>
+          <include name="Teardown"/>
+          <include name="SetUp"/>
+          <include name="RegisterDDT"/>
+        </methods>
+      </class> <!-- Com.nopCommerce.Tests.NopCommerce_RegisterDDT_Tc002 -->
+    </classes>
+  </test> <!-- NOP-E-Commerce Test(failed) -->
+</suite> <!-- Failed suite [NopCommerce] -->
